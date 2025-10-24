@@ -1,3 +1,5 @@
+"use strict";
+
 function compose(...fns) {
   if (fns.some(fn => typeof fn !== 'function'))
     throw new Error('All args must be functions, my friend!');
